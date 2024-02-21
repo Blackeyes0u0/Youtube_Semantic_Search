@@ -41,6 +41,7 @@ bash script.sh
 ```
 Youtube-Semantic-Search/
 ├── README.md
+├── README_kor.md           # README 한국말 버전
 ├── streamlit-app.py        # Streamlit application
 ├── requirements.txt
 ├── Data/
@@ -82,10 +83,9 @@ LoRA paper review : https://velog.io/@blackeyes0u0/%EB%85%BC%EB%AC%B8%EB%A6%AC%E
 ![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/peft/lora_diagram.png)
 
 
+These learned files on **huggingface space**
 
-이렇게 학습된 파일은 **huggingface space에 데모 버전을 올려놓았습니다.**
-
-### [huggingface space demo](https://huggingface.co/Soran/youtube_CLIP_LoRA_SimCSE)
+#### [huggingface space trained model](https://huggingface.co/Soran/youtube_CLIP_LoRA_SimCSE)
 
 ---
 
