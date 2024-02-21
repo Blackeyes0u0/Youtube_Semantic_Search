@@ -20,9 +20,11 @@ This project enables semantic search for YouTube videos by converting text queri
 
 
 **Model Architecture**
+
 We utilize the base models from 🤗 Transformers, CLIP, and XCLIP, and enhance them with a module from lora.py for a parameter-efficient fine-tuning approach.
 
 **Dataset & Loss**
+
 The YouTube Image-text dataset was employed to create positive pairs for contrastive learning. Image augmentation and text dropout techniques were used to generate varied training samples, inspired by SimCLR and SimCSE.
 
 ### Installation & Usage
@@ -83,7 +85,7 @@ LoRA paper review : https://velog.io/@blackeyes0u0/%EB%85%BC%EB%AC%B8%EB%A6%AC%E
 ![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/peft/lora_diagram.png)
 
 
-These learned files on **huggingface space**
+These learned models on **huggingface space**
 
 #### [huggingface space trained model](https://huggingface.co/Soran/youtube_CLIP_LoRA_SimCSE)
 
