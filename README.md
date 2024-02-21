@@ -21,7 +21,7 @@
 
 **아래 streamlit을 통한 데모버전을 체험해보세요!**
 
-<img width="80%" src="streamlit.gif"/>
+<img src="streamlit.gif"/>
 
 ## [streamlit 데모버전](https://youtube-rank.streamlit.app/)
 
