@@ -1,0 +1,13 @@
+qdrant-client
+numpy
+transformers
+python-dotenv
+sentence-transformers
+peft
+torch
+torchvision
+streamlit
+gradio
+matplotlib
+huggingface_hub
+pandas
