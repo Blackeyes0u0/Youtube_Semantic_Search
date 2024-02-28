@@ -8,7 +8,11 @@
 
 **아래 streamlit을 통한 데모버전을 체험해보세요!**
 
-<img src="README_image/streamlit_prompt.gif" width="300" height="200"/>
+<!-- <img src="README_image/streamlit_prompt.gif" width="300" height="200"/> -->
+
+<div style="text-align: center;">
+    <img src="README_image/streamlit_prompt.gif" width="600" height="400">
+</div>
 
 ## [streamlit 데모버전](https://youtube-rank.streamlit.app/)
 
