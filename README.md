@@ -102,7 +102,7 @@ LoRA 논문 리뷰 : https://velog.io/@blackeyes0u0/%EB%85%BC%EB%AC%B8%EB%A6%AC%
 
 ![alt text](README_image/image-1.png)
 
-vector DB는 Qdrant를 사용하여 관리하였고, streamlit 사이트를 이용해서 배포하였습니다.
+vector DB는 Qdrant를 사용하여 관리하였고, streamlit 사이트를 이용해서 웹앱을 구축하였습니다.
 
 
 ##### Contributing
