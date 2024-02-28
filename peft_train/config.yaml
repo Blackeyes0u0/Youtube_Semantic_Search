@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+
+# config.yaml 내에 추가
+hydra:
+  run:
+    dir: .
+
+
+# Training configuration
+training:
+  RANDOMNESS: False
+  random_seed: 77
+  SHUFFLE: False
+  batch_size: 128
+  LR: 7e-7
+  EPOCHS: 30
+  LR_MAX: 1e-5
+  earlystopping: 6
+
+# Model configuration
+model:
+  model_name: "openai/clip-vit-base-patch32"
+lora:
+  r: 16
+  alpha: 64
+  dropout: 0.03
+  merge_weights: False
+  target_modules: ["q_proj", "v_proj", "k_proj", "out_proj"]
+
+# Dataset configuration
+dataset:
+  img_dir: "./thumbnails/images"
+  metadata_csv: "./thumbnails/metadata.csv" #Joonghyun/thumbnails/images
+  CJ_value: 0.2  # ColorJitter 값

@@ -8,7 +8,7 @@
 
 **아래 streamlit을 통한 데모버전을 체험해보세요!**
 
-<img src="streamlit_prompt.gif"/>
+<img src="README_image/streamlit_prompt.gif"/>
 
 ## [streamlit 데모버전](https://youtube-rank.streamlit.app/)
 
@@ -17,6 +17,7 @@
 
 # <center> Training Process </center>
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16PCbr6upKs_N89Hlzoo-3djJrjUWovbg?usp=sharing)
 
 **모델 아키텍쳐**
 base model은 🤗 Transformers의 CLIP,XCLIP을 사용하여,
@@ -73,7 +74,7 @@ Youtube-Semantic-Search
 
 ## Model Architecture
 
-![alt text](image.png)
+![alt text](README_image/image.png)
 
 Model & Loss 설명: https://velog.io/@blackeyes0u0/youtube-CLIP-LoRA-SimCSE-%EA%B2%B0%EA%B3%BC
 
@@ -95,7 +96,7 @@ LoRA 논문 리뷰 : https://velog.io/@blackeyes0u0/%EB%85%BC%EB%AC%B8%EB%A6%AC%
 
 # Vector DB & Deploy
 
-![alt text](image-1.png)
+![alt text](README_image/image-1.png)
 
 vector DB는 Qdrant를 사용하여 관리하였고, streamlit 사이트를 이용해서 배포하였습니다.
 
