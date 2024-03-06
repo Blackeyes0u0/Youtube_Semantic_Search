@@ -86,7 +86,7 @@ Youtube-Semantic-Search
 <!-- ![alt text](README_image/image.png) -->
 
 <div style="text-align: center;">
-    <img src="README_image/image.png" height="400">
+    <img src="README_image/image.png" height="500">
 </div>
 
 Model & Loss 설명: https://velog.io/@blackeyes0u0/youtube-CLIP-LoRA-SimCSE-%EA%B2%B0%EA%B3%BC
