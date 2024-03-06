@@ -4,17 +4,20 @@
 
 ## Intro
 
+![alt text](README_image/image-3.png)
+
 사용자가 입력한 텍스트 쿼리를 임베딩으로 만들고 미리 크롤링을 통해서 유튜브 영상들을 임베딩으로 만듭니다. 이때, 영상을 임베딩으로 만들 때 CLIP(이미지 인코더)과 XCLIP(비디오 인코더)를 사용하였습니다. 또한, domain adaptation 하게 만들기 위해서 PEFT 중 LoRA를 적용하여 모델 아키텍쳐를 구성하였고, contrastive loss로 유튜브 image-text pair 데이터를 통해 학습시켰습니다. 이렇게 생성된 이미지(비디오) 임베딩들을 vector DB(Qdrant)에 저장하였고, 사용자가 문장으로 검색하더라도 의미적으로 유사한 영상을 찾을 수 있게 streamlit으로 시스템을 구축했습니다.
 
 **아래 streamlit을 통한 데모버전을 체험해보세요!**
 
 <!-- <img src="README_image/streamlit_prompt.gif" width="300" height="200"/> -->
 
+## [Streamlit 데모버전 click](https://youtube-rank.streamlit.app/)
+
 <div style="text-align: center;">
     <img src="README_image/streamlit_prompt.gif" width="600" height="400">
 </div>
 
-## [streamlit 데모버전](https://youtube-rank.streamlit.app/)
 
 
 ---
@@ -24,10 +27,12 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16PCbr6upKs_N89Hlzoo-3djJrjUWovbg?usp=sharing)
 
 **모델 아키텍쳐**
+
 base model은 🤗 Transformers의 CLIP,XCLIP을 사용하여,
 lora.py를 이용해서 base model에 module을 추가한 모델 아키텍쳐를 사용해서 Parameter efficient하게 파인튜닝하였습니다. 
 
 **Dataset & Loss**
+
 youtube Image-text 데이터셋을 통해 contrastive learning을 하기 위해서 필요한 positive pair를 만드는데, 이미지는 Augementation, text는 dropout을 통해서  만들었습니다. (SimCLR,SimCSE 참조)
 
 
@@ -78,7 +83,11 @@ Youtube-Semantic-Search
 
 ## Model Architecture
 
-![alt text](README_image/image.png)
+<!-- ![alt text](README_image/image.png) -->
+
+<div style="text-align: center;">
+    <img src="README_image/image.png" width="600" height="400">
+</div>
 
 Model & Loss 설명: https://velog.io/@blackeyes0u0/youtube-CLIP-LoRA-SimCSE-%EA%B2%B0%EA%B3%BC
 
@@ -102,7 +111,7 @@ LoRA 논문 리뷰 : https://velog.io/@blackeyes0u0/%EB%85%BC%EB%AC%B8%EB%A6%AC%
 
 ![alt text](README_image/image-1.png)
 
-vector DB는 Qdrant를 사용하여 관리하였고, streamlit 사이트를 이용해서 웹앱을 구축하였습니다.
+vector DB는 Qdrant를 사용하여 관리하였고, streamlit 사이트를 이용해서 웹을 구축하였습니다.
 
 
 ##### Contributing
